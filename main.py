@@ -83,7 +83,7 @@ class Comment(db.Model):  # Child
     text = db.Column(db.Text, nullable=False)
 
 
-# db.create_all()
+db.create_all()
 db.session.commit()
 
 def admin_only(f):
